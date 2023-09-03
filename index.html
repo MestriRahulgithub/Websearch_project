@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Wikipedia</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search Wikipedia">
+            <button onclick="search()">Search</button>
+        </div>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#">Sherlocks Homes</a></li>
+                <li><a href="#">Inspiration for the character</a></li>
+                <li><a href="#">Fictional character biography</a></li>
+                <li><a href="#">Reception</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main content here -->
+    </main>
+
+    <div id="bodyContent" class="vector-body ve-init-mw-desktopArticleTarget-targetContainer"
+        aria-labelledby="firstHeading" data-mw-ve-target-container="">
+
+        <div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr">
+            <div class="mw-parser-output">
+                <style data-mw-deduplicate="TemplateStyles:r1131603205">
+                    .mw-parser-output .mp-box {
+                        border: 1px solid #aaa;
+                        padding: 0 0.5em 0.5em;
+                        margin-top: 4px
+                    }
+
+                    .mw-parser-output .mp-h2,
+                    body.skin-timeless .mw-parser-output .mp-h2 {
+                        border: 1px solid #aaa;
+                        margin: 0.5em 0;
+                        padding: 0.2em 0.4em;
+                        font-size: 120%;
+                        font-weight: bold;
+                        font-family: inherit
+                    }
+
+                    .mw-parser-output .mp-later {
+                        font-size: 85%;
+                        font-weight: normal
+                    }
+
+                    .mw-parser-output #mp-topbanner {
+                        background: #f9f9f9;
+                        border-color: #ddd
+                    }
+
+                    .mw-parser-output #mp-welcomecount {
+                        text-align: center;
+                        margin: 0.4em
+                    }
+
+                    .mw-parser-output #mp-welcome {
+                        font-size: 162%;
+                        padding: 0.1em
+                    }
+
+                    .mw-parser-output #mp-welcome h1 {
+                        font-size: inherit;
+                        font-family: inherit;
+                        display: inline;
+                        border: none
+                    }
+
+                    .mw-parser-output #mp-free {
+                        font-size: 95%
+                    }
+
+                    .mw-parser-output #articlecount {
+                        font-size: 85%
+                    }
+
+                    .mw-parser-output .mp-contains-float::after {
+                        content: "";
+                        display: block;
+                        clear: both
+                    }
+
+                    .mw-parser-output #mp-banner {
+                        background: #fffaf5;
+                        border-color: #f2e0ce
+                    }
+
+                    .mw-parser-output #mp-left {
+                        background: #f5fffa;
+                        border-color: #cef2e0
+                    }
+
+                    .mw-parser-output #mp-left .mp-h2 {
+                        background: #cef2e0;
+                        border-color: #a3bfb1
+                    }
+
+                    .mw-parser-output #mp-right {
+                        background: #f5faff;
+                        border-color: #cedff2
+                    }
+
+                    .mw-parser-output #mp-right .mp-h2 {
+                        background: #cedff2;
+                        border-color: #a3b0bf
+                    }
+
+                    .mw-parser-output #mp-middle {
+                        background: #fff5fa;
+                        border-color: #f2cedd
+                    }
+
+                    .mw-parser-output #mp-middle .mp-h2 {
+                        background: #f2cedd;
+                        border-color: #bfa3af
+                    }
+
+                    .mw-parser-output #mp-lower {
+                        background: #faf5ff;
+                        border-color: #ddcef2
+                    }
+
+                    .mw-parser-output #mp-lower .mp-h2 {
+                        background: #ddcef2;
+                        border-color: #afa3bf
+                    }
+
+                    .mw-parser-output #mp-bottom {
+                        border-color: #e2e2e2
+                    }
+
+                    .mw-parser-output #mp-bottom .mp-h2 {
+                        background: #eee;
+                        border-color: #ddd
+                    }
+
+                    @media(max-width:875px) {
+
+                        .mw-parser-output #mp-tfp table,
+                        .mw-parser-output #mp-tfp tr,
+                        .mw-parser-output #mp-tfp td,
+                        .mw-parser-output #mp-tfp tbody {
+                            display: block !important;
+                            width: 100% !important;
+                            box-sizing: border-box
+                        }
+
+                        .mw-parser-output #mp-tfp tr:first-child td:first-child a {
+                            text-align: center;
+                            display: table;
+                            margin: 0 auto
+                        }
+                    }
+
+                    @media(min-width:875px) {
+                        .mw-parser-output #mp-upper {
+                            display: flex
+                        }
+
+                        .mw-parser-output #mp-left {
+                            flex: 1 1 55%;
+                            margin-right: 2px
+                        }
+
+                        .mw-parser-output #mp-right {
+                            flex: 1 1 45%;
+                            margin-left: 2px
+                        }
+                    }
+                </style>
+                <div id="mp-topbanner" class="mp-box">
+                    <div id="mp-welcomecount">
+
+
+                        <h2>Welcome to Sherlock Holmes Biography</h2>
+                        
+
+                    </div>
+                </div>
+                <div id="mp-upper">
+                    <div id="mp-left" class="MainPageBG mp-box">
+                        <h2 id="mp-tfa-h2" class="mp-h2"><span id="From_today.27s_featured_article"></span><span
+                                class="mw-headline" id="From_today's_featured_article">Sherlock Holmes</span></h2>
+                        <div id="mp-tfa" class="mp-contains-float">
+                            <div id="mp-tfa-img" style="float: left; margin: 0.5em 0.9em 0.4em 0em;">
+                                <div class="thumbinner mp-thumb"
+                                    style="background: transparent; border: none; padding: 0; max-width: 159px;">
+                                    <span typeof="mw:File"><img alt=""
+                                            src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Sherlock_Holmes_Portrait_Paget.jpg"
+                                            decoding="async" width="159" height="124" class="mw-file-element"
+                                            data-file-width="2832" data-file-height="2208"></span>
+                                    <div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">
+                                        Sherlocks Homes</div>
+                                </div>
+                            </div>
+                            <p>Sherlock Holmes is a fictional detective created by British author Arthur Conan Doyle.
+                                Referring to himself as a "consulting detective" in the stories, Holmes is known for his
+                                proficiency with observation, deduction, forensic science and logical reasoning that
+                                borders on the fantastic, which he employs when investigating cases for a wide variety
+                                of clients, including Scotland Yard.
+
+                                First appearing in print in 1887's A Study in Scarlet, the character's popularity became
+                                widespread with the first series of short stories in The Strand Magazine, beginning with
+                                "A Scandal in Bohemia" in 1891; additional tales appeared from then until 1927,
+                                eventually totalling four novels and 56 short stories. All but one[a] are set in the
+                                Victorian or Edwardian eras, between about 1880 and 1914. Most are narrated by the
+                                character of Holmes's friend and biographer Dr. John H. Watson, who usually accompanies
+                                Holmes during his investigations and often shares quarters with him at the address of
+                                221B Baker Street, London, where many of the stories begin.</p>
+
+                        </div>
+                        <h2 id="mp-dyk-h2" class="mp-h2"><span>Fictional character biography</span></h2>
+                        <div id="mp-tfa" class="mp-contains-float">
+                            <div id="mp-tfa-img" style="float: left; margin: 0.5em 0.9em 0.4em 0em;">
+                                <div class="thumbinner mp-thumb"
+                                    style="background: transparent; border: none; padding: 0; max-width: 159px;">
+                                    <span typeof="mw:File"><img alt=""
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/A_Study_in_Scarlet_from_Beeton%27s_Christmas_Annual_1887.jpg/255px-A_Study_in_Scarlet_from_Beeton%27s_Christmas_Annual_1887.jpg"
+                                            decoding="async" width="159" height="124" class="mw-file-element"
+                                            data-file-width="2832" data-file-height="2208"></span>
+                                    <div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">
+                                        Sherlocks Homes</div>
+                                </div>
+                            </div>
+                            <p>Details of Sherlock Holmes's life in Conan Doyle's stories are scarce and often vague.
+                                Nevertheless, mentions of his early life
+                                and extended family paint a loose biographical picture of the detective.
+
+                                A statement of Holmes's age in "His Last Bow" places his year of birth at 1854; the
+                                story, set in August 1914, describes him as
+                                sixty years of age. His parents are not mentioned, although Holmes mentions that his
+                                "ancestors" were "country squires". In "The Adventure of the Greek Interpreter",
+                                he claims that his grandmother was sister to the French artist Vernet, without
+                                clarifying whether this was Claude Joseph, Carle, or Horace Vernet. Holmes's brother
+                                Mycroft,
+                                seven years his senior, is a government official. Mycroft has a unique civil service
+                                position as a kind of human database for all aspects of government policy.
+                                Sherlock describes his brother as the more intelligent of the two, but notes that
+                                Mycroft lacks any interest in physical investigation, preferring to spend his time at
+                                the
+                                Diogenes Club.
+
+                                Holmes says that he first developed his methods of deduction as an undergraduate; his
+                                earliest cases, which he pursued as an amateur, came from fellow university students.
+                                A meeting with a classmate's father led him to adopt detection as a profession.</p>
+
+                        </div>
+                        <h2 id="mp-dyk-h2" class="mp-h2"><span>Life with Watson</span></h2>
+                        <div id="mp-tfa" class="mp-contains-float">
+                            <div id="mp-tfa-img" style="float: left; margin: 0.5em 0.9em 0.4em 0em;">
+                                <div class="thumbinner mp-thumb"
+                                    style="background: transparent; border: none; padding: 0; max-width: 159px;">
+                                    <span typeof="mw:File"><img alt=""
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Strand_paget.jpg/330px-Strand_paget.jpg"
+                                            decoding="async" width="159" height="124" class="mw-file-element"
+                                            data-file-width="2832" data-file-height="2208"></span>
+                                    <div class="thumbcaption" style="padding: 0.25em 0; word-wrap: break-word;">Holmes
+                                        and Watson</div>
+                                </div>
+                            </div>
+                            <p>n the first Holmes tale, A Study in Scarlet, financial difficulties lead Holmes and
+                                Dr. Watson to share rooms together at 221B Baker Street, London.[26] Their residence is
+                                maintained by
+                                their landlady, Mrs. Hudson.[27] Holmes works as a detective for twenty-three years,
+                                with Watson assisting
+                                him for seventeen of those years.[28] Most of the stories are frame narratives written
+                                from Watson's
+                                point of view, as summaries of the detective's most interesting cases. Holmes frequently
+                                calls Watson's records
+                                of Holmes's cases sensational and populist, suggesting that they fail to accurately and
+                                objectively report the "science" of his craft:</p>
+
+                        </div>
+                    </div>
+                    <div id="mp-right" class="MainPageBG mp-box">
+                        <h2 id="mp-itn-h2" class="mp-h2"><span class="mw-headline" id="In_the_news">Inspiration for the
+                                character</span></h2>
+                        <div id="mp-itn" class="mp-contains-float">
+                            <style data-mw-deduplicate="TemplateStyles:r1053378754">
+                                .mw-parser-output .itn-img {
+                                    float: right;
+                                    margin-left: 0.5em;
+                                    margin-top: 0.2em
+                                }
+                            </style>
+                            <div role="figure" class="itn-img">
+                                <div class="thumbinner mp-thumb"
+                                    style="background: transparent; border: none; padding: 0; max-width: 197px;">
+                                    <span typeof="mw:File"><img alt=""
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Arthur_Conan_Doyle_by_Walter_Benington%2C_1914.png/255px-Arthur_Conan_Doyle_by_Walter_Benington%2C_1914.png"
+                                            decoding="async" width="197" height="99" class="mw-file-element"
+                                            data-file-width="1920" data-file-height="965"></span>
+                                    <div class="thumbcaption"
+                                        style="padding: 0.25em 0; word-wrap: break-word; text-align: left;">Sir Arthur
+                                        Conan Doyle (1859–1930), Sherlock Holmes's creator, in 1914</div>
+                                </div>
+                            </div>
+                            <p>Edgar Allan Poe's C. Auguste Dupin is generally acknowledged as the first detective in
+                                fiction and served as the prototype
+                                for many later characters, including Holmes.[8] Conan Doyle once wrote, "Each [of Poe's
+                                detective stories] is a root from which a whole
+                                literature has developed ... Where was the detective story until Poe breathed the breath
+                                of life into it?"
+                                Similarly, the stories of Émile Gaboriau's Monsieur Lecoq were extremely popular at the
+                                time Conan Doyle began writing Holmes,
+                                and Holmes's speech and behaviour sometimes follow those of Lecoq.[10][11] Doyle has his
+                                main characters discuss these literary
+                                antecedents near the beginning of A Study in Scarlet, which is set soon after Watson is
+                                first introduced to Holmes. Watson attempts to compliment Holmes by comparing him to
+                                Dupin,
+                                to which Holmes replies that he found Dupin to be "a very inferior fellow" and Lecoq to
+                                be "a miserable bungler".</p>
+                        </div>
+                        <h2 id="mp-otd-h2" class="mp-h2"><span class="mw-headline" id="On_this_day">Reception</span>
+                        </h2>
+
+                        <div id="mp-itn" class="mp-contains-float">
+                            <style data-mw-deduplicate="TemplateStyles:r1053378754">
+                                .mw-parser-output .itn-img {
+                                    float: right;
+                                    margin-left: 0.5em;
+                                    margin-top: 0.2em
+                                }
+                            </style>
+                            <div role="figure" class="itn-img">
+                                <div class="thumbinner mp-thumb"
+                                    style="background: transparent; border: none; padding: 0; max-width: 197px;">
+                                    <span typeof="mw:File"><img alt=""
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Statue_Of_Sherlock_Holmes-Marylebone_Road.jpg/255px-Statue_Of_Sherlock_Holmes-Marylebone_Road.jpg"
+                                            width="200" height="150"></span>
+                                    <div class="thumbcaption"
+                                        style="padding: 0.25em 0; word-wrap: break-word; text-align: left;">Statue of
+                                        Sherlock Holmes near 221B Baker Street, London</div>
+                                </div>
+
+                            </div>
+                            <p>
+                                The London Metropolitan Railway named one of its twenty electric locomotives deployed in
+                                the 1920s for Sherlock Holmes. He was the only fictional character
+                                so honoured, along with eminent Britons such as Lord Byron, Benjamin Disraeli, and
+                                Florence Nightingale.
+
+                                A number of London streets are associated with Holmes. York Mews South, off Crawford
+                                Street, was renamed Sherlock Mews, and Watson's Mews is near Crawford Place.
+                                The Sherlock Holmes is a public house in Northumberland Street in London which contains
+                                a large collection of memorabilia related to Holmes, the original collection having been
+                                put together
+                                for display in Baker Street during the Festival of Britain in 1951.
+                            </p>
+                            <div role="figure" class="itn-img">
+                                <div class="thumbinner mp-thumb"
+                                    style="background: transparent; border: none; padding: 0; max-width: 197px;">
+                                    <span typeof="mw:File"><img alt=""
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg/255px-Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg"
+                                            width="200" height="150"></span>
+                                    <div class="thumbcaption"
+                                        style="padding: 0.25em 0; word-wrap: break-word; text-align: left;">Blue plaque
+                                        at The Sherlock Holmes Museum 221b Baker Street, London</div>
+                                </div>
+                            </div>
+                            <p>There are multiple statues of Sherlock Holmes around the world. The first, sculpted by
+                                John Doubleday, was unveiled in
+                                Meiringen, Switzerland, in September 1988. The second was unveiled in October 1988 in
+                                Karuizawa, Japan, and was sculpted by Yoshinori Satoh.
+                                The third was installed in Edinburgh, Scotland, in 1989, and was sculpted by Gerald
+                                Laing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
